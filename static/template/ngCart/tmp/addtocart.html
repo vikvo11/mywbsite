@@ -1,0 +1,48 @@
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+<div ng-hide="attrs.id">
+    <a class="btn btn-lg btn-primary" ng-disabled="true" ng-transclude> Add To Card</a>
+
+</div>
+<div ng-show="attrs.id">
+    <div>
+        <span ng-show="quantityMax && !inCart()">Кол:
+		<!--<span ng-show="quantityMax && !inCart()">Кол: -->
+            <select name="quantity" id="quantity" ng-model="q"
+                    ng-options=" v for v in qtyOpt"></select>
+        </span>
+		
+		<!--<div>
+    <input type="text" ng-model="name" / >
+    <p ng-bind="name"></p>
+</div> -->
+        <!--<a class="btn btn-sm btn-primary"
+           ng-click="ngCart.addItem(id, name, price, q, data)"
+           ng-transclude>Add To Card</a> -->
+		   
+		   
+			 
+			<mark  ng-show="!inCart()" style="background-color:white;">
+		<button id="offer_button" class="nav-link btn-zakaz"
+		   
+		   
+           ng-click="ngCart.addItem(id, name, price, q, data)"
+           ng-transclude>Добавить</button>
+		   </mark>
+   
+	<mark
+	<button ng-show="inCart()" class="btn-roz" style="cursor: pointer;"
+           ng-click="ngCart.removeItemById(id)"
+           ng-transclude>Убрать</button>
+	
+	 </div>
+<!--	
+    <mark  ng-show="inCart()">Товар добавлен
+	
+	<button  class="btn-roz"
+           ng-click="ngCart.removeItemById(id)"
+           ng-transclude>Убрать</button>
+    </mark>
+	-->
+</div>
+

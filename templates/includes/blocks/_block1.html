@@ -1,0 +1,61 @@
+  <div class="block1" ng-controller="SlickController">
+
+		<div class="container">
+			<!--Need to get from DB - -->
+			<!--	<img src="{{ url_for('static', filename=source.block1)}}" alt="" />  
+				
+				<div class="b1_right">
+					<h1>Мы рады приветствовать <br />Вас в нашем интернет – магазине <br /><span>Lady-Marlene!</span></h1>
+				</div>
+				-->
+				
+				<div class="container">
+				
+       <!-- <ul class="nav nav-mytabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Бокалы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="history-tab" data-toggle="tab" href="#history"  role="tab" aria-controls="history" aria-selected="false">Замочки</a>
+          </li>
+        </ul> -->
+		
+		
+		
+        <div class="tab-content mytab-content" id="myTabContent">
+          <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+		  <p style="
+				font-family: 'MonotypeCorsiva';
+				font-size: 28px;
+				text-align: center;
+				">ВЫБЕРИТЕ СВОЙ БОКАЛ</p>
+            <div class="row no-gutter">
+			  
+				 {% for item in carousel_items %}
+				 <div class="col-md-4">
+					<div class="tovar-box">
+						<h5>{{item.name}}</h5>
+							<p>{{item.description}}</p>
+							<p><img src="{{ url_for('static', filename=item.img)}}" alt="{{item.name}}"ng-mousedown="setCurrentPos($event)" ng-click="ctrlClickHandler($event);" style="cursor: pointer;"></p> 
+								<p class="price-s">{{item.price}}<svg class="svg-inline--fa fa-ruble-sign fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M239.36 320C324.48 320 384 260.542 384 175.071S324.48 32 239.36 32H76c-6.627 0-12 5.373-12 12v206.632H12c-6.627 0-12 5.373-12 12V308c0 6.627 5.373 12 12 12h52v32H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v52c0 6.627 5.373 12 12 12h58.56c6.627 0 12-5.373 12-12v-52H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12H146.56v-32h92.8zm-92.8-219.252h78.72c46.72 0 74.88 29.11 74.88 74.323 0 45.832-28.16 75.561-76.16 75.561h-77.44V100.748z"></path></svg><!-- <i class="fas fa-ruble-sign"></i> --></p>
+								
+								<p><a href="{{item.link}}?item_id={{item.id}} " class="nav-link btn-zakaz">Заказать</a></p>
+															
+										
+					</div>  
+			     </div>
+				 {% endfor %}
+
+			
+			</div>
+          </div>
+          <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+            Здесь будут замочки
+          </div>
+        </div>
+    </div>
+				
+				
+			</div>
+		
+	</div>

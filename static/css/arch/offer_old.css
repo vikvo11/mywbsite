@@ -1,0 +1,110 @@
+.a-popover-header {
+    position: relative;
+    text-align: left;
+    background: #f2f2f2;
+    background: #f1f1f1;
+    background: -webkit-linear-gradient(top,#f7f7f7,#eaeaea);
+    background: linear-gradient(to bottom,#f7f7f7,#eaeaea);
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid #cdcdcd;
+    border-bottom-color: rgba(0,0,0,.2);
+    box-shadow: 0 1px 0 rgba(255,255,255,.5) inset, 0 -1px 0 rgba(255,255,255,.4) inset;
+    padding: 0 14px;
+    margin: 0;
+    z-index: 10;
+}
+.a-popover-modal {
+    position: absolute;
+    min-width: 0;
+    max-width: 80%;
+    padding: 0;
+}
+.a-popover {
+    display: inline-block;
+    position: absolute;
+    /* visibility: hidden; */
+    top: 0;
+    left: 0;
+    z-index: 1010;
+    padding: 8px;
+    /*max-width: 440px;*/
+}
+.a-modal-scroller {
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    overflow: auto;
+    position: fixed;
+    visibility: hidden;
+    z-index: 1009;
+}
+.a-popover-modal .a-popover-wrapper {
+    border: 1px solid;
+    border-color: rgba(0,0,0,.75);
+    box-shadow: 0 4px 6px rgba(0,0,0,.25);
+    height: 100%;
+}
+.a-popover-wrapper {
+    overflow: hidden;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.2);
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.13);
+    background-color: #fff;
+}
+.a-popover-header .a-popover-header-content {
+    min-height: 35px;
+    line-height: 16px;
+    padding: 10px 0 9px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+h4 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.255;
+}
+.a-button-close {
+    display: block;
+    zoom: 1;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: transparent;
+    float: right;
+    padding: 8px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin: -13px 0 0;
+    line-height: 0;
+}
+button, input, select, textarea {
+    font-family: inherit;
+}
+button, input[type=button], input[type=reset], input[type=submit] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+.a-popover .a-popover-a11y-offscreen {
+    opacity: 0;
+    overflow: hidden!important;
+    display: block!important;
+    width: 1px!important;
+    height: 1px!important;
+    margin: 0!important;
+    padding: 0!important;
+    border: 0!important;
+    position: absolute!important;
+    left: 0!important;
+}
+.a-popover-inner {
+    background-color: #fff;
+    padding: 14px 18px;
+    text-align: left;
+    overflow-x: hidden;
+}

@@ -1,0 +1,81 @@
+  <!--
+ <div id="glasses" class="block3">
+		<div class="container">
+			<h2>Гравировка на бокалах</h2>
+			<div class="b3_line">
+
+				<div class="b3_right">
+					<div class="glasses">
+						<div class="b3_right_top">
+							<div class="b3_right_title">Выберите ваш бокал:</div>
+							
+	
+  <carousel sides="vm.sides.all" current="vm.sides.current"></carousel>
+
+
+
+  <button class="controls" ng-click="vm.controls.decrease();">Decrease Sides</button>
+  <button class="controls" ng-click="vm.controls.increase();">Increase Sides</button>
+</div>
+</div>
+  </div>
+</div>
+</div>
+
+  <script src="/static/bower_components/angular/angular.min.js"></script>
+  <script src="/static/bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js"></script>
+  <script src="/static/js/app.js"></script>
+  <script src="/static/js/controllers/UiController.js"></script>
+
+
+  <script src="/static/dist/angular-3d-carousel.js"></script>
+  <script>window.viewportUnitsBuggyfill.init();</script>
+  
+  
+	  <carousel sides="vm.sides.all" current="vm.sides.current"></carousel>
+-->
+<a href ng-click="goCats = !goCats">GLASSES</a>
+<div id="bottle" class="block4" ng-show="!goCats">
+		<div class="container">
+			<h2>Гравировка на бутылках</h2>				
+			<div class="b3_line" >
+					<div class="b3_left">
+						<img src="{{ url_for('static', filename=source.block4)}}" alt="" />
+					</div>	
+			
+				<div class="b3_right">
+				
+					<div class="bottle">
+						<div class="b3_right_top">
+							<div class="b3_right_title">Выберите бутылку:</div>
+						</div>
+						<div id="carousel" class="b3_right_carousel owl-carousel">
+						
+										{% for item in carousel_items %}
+										<div class="b3_right_carousel_item">
+												<div class="b3_right_carousel_img"><img src="{{ url_for('static', filename=item.img)}}" alt="" /></div>
+												<div class="b3_right_carousel_price">Цена <span>{{item.price}}</span> руб.</div>
+											<!--	-->
+											<div class="b3_right_carousel_button_n"><a href="{{item.link}}?item_id={{item.id}}" class="btn"><span>Далее</span></a></div> 
+												
+
+												<div class="b3_right_carousel_sub"></div>					
+											</div>
+										{% endfor %}
+										
+										
+										
+
+																					
+											
+																
+																											</div>
+											</div>
+
+																</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>

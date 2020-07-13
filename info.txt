@@ -1,0 +1,99 @@
+app.py - Исполняемый файл (python app.py) :
+
+data.py - файл с данными :
+
+
+/templates/layout_cart.html - Шапка HTML кода:
+
+/static/uiview.js  - AngularJS код - отвечает за uiview на главной странице (block3/block4) :
+/static/js/ngcard/dist/ngCart.js - отвечает за корзину:
+
+/static/js/owl.carousel.js - Прокрутка товаров:
+
+/static/slick/js/slick.min.js - Прокрутка товаров на angularJS:
+
+/main -основная страница:
+    Темплейт => templates/dashbord_lady.html - 
+			Данные : header=header(),source=source(),mob_menu=mob_menu(),menu=menu(),block2=block2(),carousel_items=carousel_items()
+
+/adm_restart - перегенерация страниц для uiview( На главной странице block3/block4):
+	'static/template/_u_bottles.html' - Темплейт => templates/uiview/bottles_u.html - 
+			Данные : items=carousel_items_bottles(),source=source()
+            
+	'static/template/_u_glasses.html' - Темплейт => templates/uiview/glasses_u.html
+			Данные : items=carousel_items(),source=source()
+/cart - Корзина :
+     Темплейт => templates/cart.html - 
+			Данные : header=header(),source=source(),mob_menu=mob_menu(),menu=menu(),block2=block2(),carousel_items=carousel_items(),cart_items=cart_items()
+/glasses - Бокалы:
+     Темплейт => templates/glasses.html - 
+			Данные : header=header(),source=source(),mob_menu=mob_menu(),menu=menu(),block2=block2(),carousel_items=carousel_items(),cart_items=cart_items(),item_id=item_id,type_index=type_index()
+            
+            Переменные:
+            item_id = request.args.get('item_id', default = 0, type = int)
+            filter = request.args.get('filter', default = '*', type = str)
+            
+            GET:
+            /glasses => item_id =0 ; filter ='*'
+            /glasses?item_id=1002 => item_id =1002 ; filter ='*'
+            
+            Зависимость от item_id при генерации темплейта /templates/glasses :
+            item_id = 0 => генерит - includes/blocks/_glasses.html
+            item_id <> 0 => 
+                        генерит img {{ url_for('static', filename=car_item.b_img)}}
+                        + генерит /templates/includes/blocks/_carts.html 
+                            Зависимость от item_id при генерации темплейта /templates/includes/blocks/_carts.html :
+                                генерит список товаров в зависимости от item_id в cart_items()
+                                    колличесвто списков зависит от записей в type_index и наличия этих типов в cart_items()
+                            Генерит кнопки для отправки товара в корзину:
+                                <ngcart-addtocart id="{{item.u_id}}" name="{{item.name}}" price="{{item.price}}" quantity="1" quantity-max="5" data="item"></ngcart-addtocart>
+
+/bottles - Бутылки:
+     Темплейт => templates/bottles.html - 
+			Данные : header=header(),source=source(),mob_menu=mob_menu(),menu=menu(),block2=block2(),carousel_items=carousel_items_bottles(),cart_items=cart_items_bottles(),item_id=item_id,type_index=type_index_bottles()
+            
+            Переменные:
+            item_id = request.args.get('item_id', default = 0, type = int)
+            filter = request.args.get('filter', default = '*', type = str)
+            
+            GET:
+            /bottles => item_id =0 ; filter ='*'
+            /bottles?item_id=2002 => item_id =2002 ; filter ='*'
+            
+            Зависимость от item_id при генерации темплейта /templates/glasses :
+            item_id = 0 => генерит - includes/blocks/_bottles.html
+            item_id <> 0 => 
+                        генерит img {{ url_for('static', filename=car_item.b_img)}}
+                        + генерит /templates/includes/blocks/_carts.html 
+                            Зависимость от item_id при генерации темплейта /templates/includes/blocks/_carts.html :
+                                генерит список товаров в зависимости от item_id в cart_items_bottles()
+                                    колличесвто списков зависит от записей в type_index_bottles и наличия этих типов в cart_items_bottles()
+                            Генерит кнопки для отправки товара в корзину:
+                                <ngcart-addtocart id="{{item.u_id}}" name="{{item.name}}" price="{{item.price}}" quantity="1" quantity-max="5" data="item"></ngcart-addtocart>
+                                
+/main_view_g ; /glass/<glasses_id> -Используются для общения фронт - сервер по средствам REST API (/static/uiview.js):
+    ->>  uiView.controller('myController', function($scope, $http)
+    ->>  uiView.controller('myGlass', function($scope, $http,$stateParams)
+            ***
+          $scope.glassID = response.data;
+          
+          Вызов переменной glassID в html коде(AngularJS):
+            <div ng-repeat="glass in glassID">
+            name="{{glass.name}}" 
+    
+/main_view_gravs - Передача json с шаблонами с сервера - $scope.gravs
+    ->>  uiView.controller('myController', function($scope, $http)
+            ***
+          $scope.gravs = response.data;
+            ***
+          $scope.gravs_count=Array(5)  //Колличество шаблонов гравировки в type_index_shablon - используется в _u_gravs_1.html(контролер -myController)
+          
+          Вызов переменной gravs в html коде(AngularJS):
+            <div ng-repeat="glass in gravs_count track by $index">
+            ***
+            <img ng-src="{{gravs[$index].img}}" style="padding-top: 260px; width: 270px;">
+Добавление в корзину:
+                ->>static\template\ngCart\addtocart.html
+Валидация полей в форме заказа(/glasses -> _carts.html) происходит:
+                в static\js\ngcard\dist\ngCart.js по полю document.forms["cart"+id].reportValidity()
+                Сами формы генерятся в _carts.html

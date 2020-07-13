@@ -1,0 +1,465 @@
+/*
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,600,800&subset=cyrillic";
+*/
+@charset "utf-8";
+@import url("reset.css");
+@import url("_ladystyle.css");
+@import url("_jq_carousel.css");
+
+@media (min-width: 1200px) {
+.container{max-width:1170px}
+}
+.b3_right_carousel_price {margin: 230px 0 0;}
+body{color:#363636;overflow-x:hidden}
+a{color:#f0f;text-decoration:underline}
+.c-h-roz{color:#f0f;font-family: 'MonotypeCorsiva';font-size: 48px;padding-bottom: 0px;}
+.c-roz{color:#f0f}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-weight:700}
+a:hover{color:#363636}
+img{max-width:100%}
+section,.section{padding:35px 0}
+svg.svg-inline--fa{color:#f0f}
+header.header{padding:30px 0}
+.header p{margin:0}
+.top-contact svg{margin-right:10px}
+.top-contact a{color:#363636;text-decoration:none}
+li.cart{border-right:1px solid #363636}
+/*
+li.cart svg{font-size:37px;margin-right:16px}
+li.cart-right{padding-left:16px;letter-spacing:-1px}
+*/
+li.cart svg{font-size:33px;margin-right:10px}
+li.cart-right{padding-left:10px;letter-spacing:-1px;line-height:15px}
+
+svg.svg-inline--fa.fa-ruble-sign.fa-w-12{color:#363636}
+a.nav-link{text-transform:uppercase;text-decoration:none;font-weight:600}
+li.nav-item.active a.nav-link{border-bottom:3px solid #f0f}
+.size-33{font-size:33px;margin-top:60px;padding-top: 20px;text-align: center;}
+.size-72{font-size:72px}
+span.bgFFF0FF{padding:0 10px 10px;background-color:#FFF0FF}
+.btn-danger{color:#fff;background-color:#f0f;border-color:#f0f;-webkit-box-shadow:0 13px 21px -2px rgba(230,12,230,1);-moz-box-shadow:0 13px 21px -2px rgba(230,12,230,1);box-shadow:0 13px 21px -2px rgba(230,12,230,1);font-size:18px;font-weight:600;border-radius:23px;margin-top:70px}
+
+
+.btn-roz{color:#fff;text-decoration:none;padding:7px 30px;background:#c42aac;background:-moz-linear-gradient(45deg,rgba(196,42,172,1) 0%,rgba(238,94,215,1) 100%);background:-webkit-linear-gradient(45deg,rgba(196,42,172,1) 0%,rgba(238,94,215,1) 100%);background:linear-gradient(45deg,rgba(196,42,172,1) 0%,rgba(238,94,215,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c42aac',endColorstr='#ee5ed7',GradientType=1);-webkit-box-shadow:0 13px 21px -2px rgba(230,12,230,1);-moz-box-shadow:0 13px 21px -2px rgba(230,12,230,1);box-shadow:0 13px 21px -2px rgba(230,12,230,1);font-size:18px;font-weight:600;border-radius:23px;margin-top:70px}
+.btn-roz:hover{background:#C32CAD;color:#fff}
+ul#myTab{text-align:center;-ms-flex-pack:center!important;justify-content:center!important;-ms-flex:1 1 auto!important;flex:1 1 auto!important;display:-ms-flexbox!important;display:flex!important;-ms-flex:1 1 auto!important;flex:1 1 auto!important;margin-bottom:40px}
+ul#myTab a.nav-link{color:#4C4C4C}
+ul#myTab li.nav-item{border:1px solid #F7F7F7;margin:7px;float:none;display:inline-block}
+ul#myTab li.nav-item a.nav-link.active{background-color:#F7F7F7}
+.tovar-box{text-align:center;padding:15px}
+.tovar-box:hover{box-shadow:1px 1px 13px #f0f;-webkit-box-shadow:1px 1px 13px #f0f}
+.tovar-box h5{font-size:24px}
+.tovar-box p{color:#929292}
+.tovar-box img{max-height:233px}
+p.price-s{color:#f0f;font-size:24px;font-weight:700}
+p.price-s svg.fa-ruble-sign{color:#f0f!important}
+.btn-zakaz{color:#363636;background-color:#F5F5F5;font-weight:600;width:100%;border-radius:20px;text-decoration:none}
+.btn-zakaz:hover{background-color:#E8E8E8}
+
+
+
+/*
+@media (max-width: 1270px) {
+  svg.svg-inline--fa{color:#322e32} }
+	max-width: 1480px - если ширина меньше 1480 
+	min-width: 1480px - если ширина больше 900 
+@media (max-width: 600px) {
+	svg.svg-inline--fa{color:#322e32}
+}	
+	*/
+	
+	
+@media (min-width: 1025px) {/*min-width: 992px - если ширина больше 992 - меню сварачивается*/
+.navbar-expand-lg .navbar-nav .nav-link{padding:0;margin-left:1rem;margin-right:1rem}
+div#navbarSupportedContent{-ms-flex-pack:center!important;justify-content:center!important;-ms-flex:1 1 auto!important;flex:1 1 auto!important;display:-ms-flexbox!important;display:flex!important;-ms-flex:1 1 auto!important;flex:1 1 auto!important}
+li.nav-item{border-right:1px solid #E2E2E2}
+li.nav-item:last-child{border-right:none}
+.w-360{max-width:360px}
+img.bokal{position:absolute;right:-70px;z-index:777}
+.a-popover-wrapper {zoom: 1.00;}
+}
+/*	
+@media (max-width: 691.99px) {
+		svg.svg-inline--fa{color:#322e32}
+header.header{text-align:center}
+ul.nav.right-top{position:absolute;z-index:7;right:0;bottom:0;margin-bottom:-75px;padding-right: 40px;}
+}	
+*/	
+
+
+
+.slick-slider
+{
+	
+background-image: url(/static/lady/images/grav_1.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+	/*background-size: contain;*/
+	
+}
+#exampl .slick-list{
+border-radius: 10px;
+}
+#exampl .slick-slide{
+width: 450px;
+z-index: 99;
+	-webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+	filter: blur(5px);
+    filter: url('/static/img/blur.svg#blur'); /* изображение размыто */
+	pointer-events: none;/* не кликабельно */
+
+}
+#exampl .slick-slide.slick-center {
+	z-index: 100;
+	filter: none; /* изображение не размыто */
+	pointer-events: auto;/* кликабельно */
+	
+}
+#exampl .slick-prev
+{
+    left: 28%;
+}
+#exampl .slick-next
+{
+    right: 28%;
+}
+
+
+@media (max-width: 900px) and (orientation: landscape) { /*если ширина больше 1200 - фон для слайдера на 4 бокала */
+.slick-slide{
+width: 270px;
+}
+#exampl .slick-slide{
+width: 270px;
+}
+#exampl .slick-prev
+{
+    left: -25px;
+}
+#exampl .slick-next
+{
+    right: -25px;
+}
+.a-popover-wrapper {zoom: 0.65;}
+.b3_right_carousel_price {margin: 185px 0 0;}
+}
+
+@media (max-width: 800px) and (orientation: portrait) { /*если ширина больше 1200 - фон для слайдера на 4 бокала */
+
+.a-popover-wrapper {zoom: 0.75;}
+}
+
+/*
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+*/
+@media (max-width: 1023px) { /*если ширина больше 1200 - фон для слайдера на 4 бокала */
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav_ipad_1.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+	/*background-size: contain;*/
+}
+#exampl .slick-prev
+{
+    left: -25px;
+}
+#exampl .slick-next
+{
+    right: -25px;
+}
+}
+@media (max-width: 600px) and (orientation: landscape) { /*если ширина больше 1200 - фон для слайдера на 4 бокала */
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav_2.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+	/*background-size: contain;*/
+}
+#exampl .slick-prev
+{
+    left: -25px;
+}
+#exampl .slick-next
+{
+    right: -25px;
+}
+.a-popover-wrapper {zoom: 0.40;}
+.b3_right_carousel_price {margin: 225px 0 0;}
+}
+
+@media (max-width: 599px) and (orientation: portrait) { /*если ширина больше 1200 - фон для слайдера на 4 бокала */
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav_3.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+	/*background-size: contain;*/
+}
+#exampl .slick-prev
+{
+    left: -25px;
+}
+#exampl .slick-next
+{
+    right: -25px;
+}
+.a-popover-wrapper {zoom: 0.40;}
+}
+
+@media (max-width: 479px) and (orientation: portrait) { /*если ширина больше 1200 - фон для слайдера на 4 бокала */
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav-1.png);
+    background-repeat: no-repeat;
+	background-size: contain;
+	
+	/*background-size: contain;*/
+}
+.container.ng-scope
+{
+	width: 280px;
+	
+}
+#exampl .slick-slide{
+width: 350px;
+}
+#exampl .slick-prev
+{
+    left: -25px;
+}
+#exampl .slick-next
+{
+    right: -25px;
+}
+
+#magnify {
+  width: 350px;
+}
+ 
+#magnify img {
+  width: 100%;
+}
+.a-popover-wrapper {zoom: 0.38;
+/*float: right;*/}
+
+.btn-zakaz{    width: 85%;}
+}
+
+@media (max-width: 479px) and (orientation: landscape) { /*если ширина больше 1200 - фон для слайдера на 4 бокала */
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav_2.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+	
+	/*background-size: contain;*/
+}
+#exampl .slick-slide{
+width: 350px;
+}
+#exampl .slick-prev
+{
+    left: -25px;
+}
+#exampl .slick-next
+{
+    right: -25px;
+}
+
+#magnify {
+  width: 350px;
+}
+ 
+#magnify img {
+  width: 100%;
+}
+.a-popover-wrapper {zoom: 0.38;
+/*float: right;*/}
+.b3_right_carousel_price {margin: 225px 0 0;}
+}
+/*.magnify_offer {left:230px;}*/
+/*
+@media (min-width: 576px) { svg.svg-inline--fa{color:#322e32} 
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav-1.png);
+    background-repeat: no-repeat;
+	
+}
+}
+
+
+@media (min-width: 768px) { svg.svg-inline--fa{color:#322e32} 
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav-2.png);
+    background-repeat: no-repeat;
+	
+}}
+
+
+@media (min-width: 992px) { svg.svg-inline--fa{color:#322e32} 
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav-3.png);
+    background-repeat: no-repeat;
+	
+}}
+
+
+@media (min-width: 1200px) { svg.svg-inline--fa{color:#322e32}
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav-4.png);
+    background-repeat: no-repeat;
+	
+} }
+
+
+
+@media (max-width: 575.98px) { svg.svg-inline--fa{color:#322e32}
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav-4.png);
+    background-repeat: no-repeat;
+	
+}}
+
+
+@media (max-width: 767.98px) { svg.svg-inline--fa{color:#322e32} 
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav-3.png);
+    background-repeat: no-repeat;
+	
+}}
+
+
+@media (max-width: 991.98px) { svg.svg-inline--fa{color:#322e32}
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav-2.png);
+    background-repeat: no-repeat;
+	
+} }
+
+
+@media (max-width: 1199.98px) { svg.svg-inline--fa{color:#322e32}
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav-1.png);
+    background-repeat: no-repeat;
+	
+}}
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { svg.svg-inline--fa{color:#322e32} }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { svg.svg-inline--fa{color:#322e32} }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { svg.svg-inline--fa{color:#322e32} }
+
+
+@media (min-width: 768px) and (max-width: 1199.98px) { svg.svg-inline--fa{color:#322e32} } 
+*/
+
+/*##################*/
+
+
+
+/*
+@media (max-width: 691.99px) {
+		svg.svg-inline--fa{color:#322e32}
+header.header{text-align:center}
+ul.nav.right-top{position:absolute;z-index:7;right:0;bottom:0;margin-bottom:-75px;padding-right: 40px;}
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav-1.png);
+    background-repeat: no-repeat;
+	
+}
+.container.ng-scope
+{
+	width: 310px;
+}
+}
+
+@media (min-width: 768px){
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav_ipad.png);
+    background-repeat: no-repeat;
+}
+.slick-slide
+{
+	display: none;
+	float: left;
+	height: 50%;
+	min-height: 1px;
+	
+}
+}
+
+@media (min-width: 1020px ){
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav_ipad_pro.png);
+    background-repeat: no-repeat;
+}
+.slick-slide
+{
+	height: 40%;
+	
+}
+}
+
+@media (min-width: 1040px){
+.slick-slider
+{
+	margin-bottom: 30px;
+background-image: url(/static/lady/images/grav.png);
+    background-repeat: no-repeat;
+}
+.slick-slide
+{
+	height: 60%;
+}
+
+}
+@media (min-width: 1000px){
+
+.slick-slide
+{
+	height: 90%;
+	
+}
+}
+/* */

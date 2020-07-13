@@ -1,0 +1,220 @@
+.a-popover-wrapper {
+    background-color: rgb(255, 255, 255); border-color: rgba(0, 0, 0, 0.75); border-radius: 4px; border-style: solid; border-width: 0.989583px; box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 6px 0px; height: 654.844px; overflow: hidden; width: 787.969px; perspective-origin: 393.976px 327.413px; transform-origin: 393.984px 327.422px;
+}
+.a-popover-header {
+	background-image: -webkit-linear-gradient(top, rgb(247, 247, 247), rgb(234, 234, 234)); border-bottom: 0.989583px solid rgba(0, 0, 0, 0.2); border-top-left-radius: 4px; border-top-right-radius: 4px; bottom: 0px; box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.4) 0px -1px 0px 0px inset; height: 35.9722px; left: 0px; padding-left: 14px; padding-right: 14px; position: relative; right: 0px; top: 0px; width: 786.024px; z-index: 10; perspective-origin: 393.003px 17.9688px; transform-origin: 393.003px 17.9774px;
+}
+.a-popover-header-content {
+	font-size: 13px; height: 35px; line-height: 16px; margin-right: 20px; min-height: 35px; padding-bottom: 9px; padding-top: 10px; width: 738.021px; perspective-origin: 369.01px 17.5px; transform-origin: 369.01px 17.5px;
+}
+.a-button-close {
+	background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0); border-radius: 3px; border-style: solid; border-width: 0.989583px; bottom: 3.64583px; display: block; height: 26.8576px; left: 753.056px; line-height: 0px; margin-top: -13px; padding: 8px; position: absolute; right: 5px; top: 17.4826px; width: 27.9514px; perspective-origin: 13.9757px 13.4201px; transform-origin: 13.9757px 13.4201px;
+}
+
+.a-icon,.a-link-emphasis:after
+{
+	
+	background-image: url(/static/img/sprite_1x__V2_.png);
+	background-repeat: no-repeat;
+	background-size: 400px 900px;
+	display: inline-block;
+	vertical-align: top;
+	webkit-background-size: 400px 900px;
+}
+.a-icon-close
+{
+	background-position: -297px -5px;
+	height: 9px;
+	opacity: .64;
+	width: 10px;
+}
+.a-button-close:hover .a-icon-close
+{
+	opacity: .8;
+}
+.a-popover-a11y-offscreen {
+	bottom: -1.00694px; display: block; height: 0.989583px; left: 0px; /*opacity: 0; overflow: hidden; position: absolute;*/ position: relative; right: 785.017px; top: 34.9826px; width: 0.989583px; perspective-origin: 0.486111px 0.486111px; transform-origin: 0.494792px 0.494792px;	
+}
+
+.a-popover-inner {
+	height: 616.875px; overflow: hidden auto; background-color: rgb(255, 255, 255); padding: 14px 18px; width: 786.024px; perspective-origin: 393.003px 308.438px; transform-origin: 393.003px 308.438px;
+}
+.a-section {
+	bottom: 0px; height: 588.889px; left: 0px; max-height: 750px; max-width: 1000px; min-height: 530px; overflow: auto hidden; position: relative; right: 0px; top: 0px; width: 750.035px; perspective-origin: 375.017px 294.444px; transform-origin: 375.017px 294.444px;
+}
+.a-fixed-left-grid {
+	bottom: 0px; height: 588.889px; left: 0px; position: relative; right: 0px; top: 0px; width: 750.035px; perspective-origin: 375.017px 294.444px; transform-origin: 375.017px 294.444px;
+}
+.a-fixed-left-grid-inner{
+	padding-left: 420px; bottom: 0px; height: 588.889px; left: 0px; position: relative; right: 0px; top: 0px; width: 750.035px; perspective-origin: 375.017px 294.444px; transform-origin: 375.017px 294.444px;
+}
+.a-fixed-left-grid-col {
+	width: 420px; margin-left: -420px; float: left; bottom: 0px; height: 486.667px; left: 0px; min-height: 1px; position: relative; right: 0px; top: 0px; perspective-origin: 210px 243.333px; transform-origin: 210px 243.333px;
+}
+.ac-preview-container {
+	bottom: 0px; height: 400px; left: 0px; margin: 10px; overflow: hidden; position: relative; right: 0px; top: 0px; width: 400px; perspective-origin: 200px 200px; transform-origin: 200px 200px;
+}
+.a-color-secondary {
+	border-color: rgb(85, 85, 85); color: rgb(85, 85, 85); outline-color: rgb(85, 85, 85); text-align: center; text-decoration: none solid rgb(85, 85, 85); column-rule-color: rgb(85, 85, 85); -webkit-text-emphasis-color: rgb(85, 85, 85); -webkit-text-stroke-color: rgb(85, 85, 85); caret-color: rgb(85, 85, 85);
+}
+.ac-preview-guideline {
+	height: 47.7778px; padding: 5px; text-align: center; width: 420px; perspective-origin: 210px 23.8889px; transform-origin: 210px 23.8889px;
+}
+.canvas-container {
+	width: 343.993px; height: 35px; position: absolute; user-select: none; top: 303px; left: 40px; bottom: 62.0139px; box-sizing: content-box; right: 16.0069px; perspective-origin: 171.979px 17.5px; transform-origin: 171.988px 17.5px;
+}
+.a-fixed-right-grid-col {
+	padding-left: 9.89583px; float: left; bottom: 0px; height: 588.889px; left: 0px; margin-left: 30px; max-height: 600px; max-width: 300px; min-height: 420px; min-width: 300px; overflow: auto; position: relative; right: 0px; top: 0px; width: 300px; perspective-origin: 150px 294.444px; transform-origin: 150px 294.444px;
+}
+.a-row {
+	height: 171.858px; margin-bottom: 4px; width: 290.122px; perspective-origin: 145.052px 85.9201px; transform-origin: 145.061px 85.9288px;
+}
+.a-column {
+	background-color: rgb(255, 255, 255); float: left; height: 171.858px; margin-right: 5.79861px; min-height: 1px; width: 290.122px; perspective-origin: 145.052px 85.9201px; transform-origin: 145.061px 85.9288px;
+}
+.a-box {
+	background-color: rgb(255, 255, 255); border-color: rgb(221, 221, 221); border-radius: 4px; border-style: solid; border-width: 0.989583px; height: 167.83px; margin-bottom: 4px; text-align: center; width: 290.122px; perspective-origin: 145.052px 83.9063px; transform-origin: 145.061px 83.9149px;
+}
+.a-box-inner {
+	border-radius: 4px; bottom: 0px; height: 165.885px; left: 0px; padding: 14px 18px; position: relative; right: 0px; text-align: center; top: 0px; width: 288.177px; perspective-origin: 144.08px 82.934px; transform-origin: 144.08px 82.934px;
+}
+.pc-popover-footer-wrapper {
+	height: 127.899px; text-align: center; width: 252.188px; perspective-origin: 126.094px 63.941px; transform-origin: 126.094px 63.941px;
+}
+.a-spacing-small {
+	height: 30.9722px; margin-bottom: 10px; margin-top: 10px; text-align: center; width: 252.188px; perspective-origin: 126.094px 15.4688px; transform-origin: 126.094px 15.4774px;
+}
+.a-font_price {
+	bottom: -1px; display: inline-block; font-size: 17px; font-weight: 700; height: 25.1042px; left: 0px; line-height: 21.335px; padding-left: 6px; padding-top: 4px; position: relative; right: 0px; text-align: center; text-rendering: optimizelegibility; top: 1px; width: 53.2118px; perspective-origin: 26.5972px 12.5521px; transform-origin: 26.5972px 12.5521px;
+}
+.a-color-price {
+	border-color: rgb(177, 39, 4); bottom: -1px; color: rgb(177, 39, 4); display: inline-block; font-size: 17px; font-weight: 700; height: 25.1042px; left: 0px; line-height: 21.335px; outline-color: rgb(177, 39, 4); padding-left: 6px; padding-top: 4px; position: relative; right: 0px; text-align: center; text-decoration: none solid rgb(177, 39, 4); text-rendering: optimizelegibility; top: 1px; width: 57.9688px; column-rule-color: rgb(177, 39, 4); perspective-origin: 28.9757px 12.5521px; -webkit-text-emphasis-color: rgb(177, 39, 4); -webkit-text-fill-color: rgb(177, 39, 4); -webkit-text-stroke-color: rgb(177, 39, 4); transform-origin: 28.9844px 12.5521px; caret-color: rgb(177, 39, 4);
+}
+.a-add_button {
+	background-color: rgb(240, 193, 75); border-color: rgb(168, 135, 52) rgb(156, 126, 49) rgb(132, 106, 41); border-radius: 3px; border-style: solid; border-width: 0.989583px; cursor: pointer; display: inline-block; height: 30.9375px; text-align: center; vertical-align: middle; width: 252.188px; perspective-origin: 126.094px 15.4688px; transform-origin: 126.094px 15.4688px;
+}
+.a-button-inner {
+	background-image: -webkit-linear-gradient(top, rgb(247, 223, 165), rgb(240, 193, 75)); border-radius: 2px; bottom: 0px; box-shadow: rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset; cursor: pointer; display: block; height: 28.9931px; left: 0px; overflow: hidden; position: relative; right: 0px; text-align: center; top: 0px; width: 250.243px; perspective-origin: 125.104px 14.4965px; transform-origin: 125.113px 14.4965px;
+}
+
+.a-button-text {
+	bottom: 0px; cursor: pointer; display: block; height: 28.8889px; left: 0px; line-height: 29px; padding-left: 35px; padding-right: 10px; position: relative; right: 0px; text-align: center; top: 0px; white-space: nowrap; width: 250.226px; z-index: 10; perspective-origin: 125.104px 14.4444px; transform-origin: 125.113px 14.4444px;
+}
+
+.a-icon-cart {
+	background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIIcon@legacyImages-sprite_1x-6c462f5dc3bc3e40d0788502814fa7043355712a._V2_.png&quot;); background-position: -35px -5px; background-repeat: no-repeat; background-size: 400px 900px; bottom: 1.99653px; cursor: pointer; display: block; height: 25px; left: 2px; position: absolute; right: 223.229px; text-align: center; top: 2px; width: 25px; perspective-origin: 12.5px 12.5px; transform-origin: 12.5px 12.5px;
+}
+.a-button-input {
+	background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0); bottom: 0px; color: rgba(0, 0, 0, 0); cursor: pointer; display: block; height: 28.9931px; left: 0px; opacity: 0.01; outline-color: rgba(0, 0, 0, 0); padding-left: 6px; padding-right: 6px; position: absolute; right: 0px; text-align: center; text-decoration: none solid rgba(0, 0, 0, 0); top: 0px; white-space: pre; width: 250.226px; z-index: 20; column-rule-color: rgba(0, 0, 0, 0); align-items: flex-start; perspective-origin: 125.104px 14.4965px; -webkit-text-emphasis-color: rgba(0, 0, 0, 0); -webkit-text-fill-color: rgba(0, 0, 0, 0); -webkit-text-stroke-color: rgba(0, 0, 0, 0); transform-origin: 125.113px 14.4965px; user-select: none; caret-color: rgba(0, 0, 0, 0);
+}
+.a-button-text {
+	bottom: 0px; cursor: pointer; display: block; height: 28.8889px; left: 0px; line-height: 29px; padding-left: 35px; padding-right: 10px; position: relative; right: 0px; text-align: center; top: 0px; white-space: nowrap; width: 250.226px; z-index: 10; perspective-origin: 125.104px 14.4444px; transform-origin: 125.113px 14.4444px;
+}
+.a-row-input {
+	height: 409.045px; margin-bottom: 4px; width: 290.122px; perspective-origin: 145.052px 204.514px; transform-origin: 145.061px 204.514px;
+}
+.a-column-input{
+	background-color: rgb(255, 255, 255); float: left; height: 409.045px; margin-right: 5.79861px; min-height: 1px; width: 290.122px; perspective-origin: 145.052px 204.514px; transform-origin: 145.061px 204.514px;
+}
+.a-box-input{
+	background-color: rgb(255, 255, 255); border-color: rgb(221, 221, 221); border-radius: 4px; border-style: solid; border-width: 0.989583px; height: 409.01px; min-height: 400px; width: 290.122px; perspective-origin: 145.052px 204.497px; transform-origin: 145.061px 204.497px;
+}
+.a-box-input-inner{
+	border-radius: 4px; bottom: 0px; height: 407.066px; left: 0px; padding: 14px 18px; position: relative; right: 0px; top: 0px; width: 288.177px; perspective-origin: 144.08px 203.524px; transform-origin: 144.08px 203.533px;
+}
+.pc-single-text-input-container{
+	height: 379.08px; margin-right: 10px; overflow: auto; padding-right: 10px; width: 242.188px; perspective-origin: 121.094px 189.531px; transform-origin: 121.094px 189.54px;
+}
+.a-section-input {
+	height: 18.8889px; margin-bottom: 6px; width: 113.646px; perspective-origin: 56.8229px 9.44444px; transform-origin: 56.8229px 9.44444px;
+}
+.a-column1 {
+	float: left; height: 24.8785px; margin-right: 4.63542px; min-height: 1px; width: 113.646px; perspective-origin: 56.8229px 12.4306px; transform-origin: 56.8229px 12.4392px;
+}
+.a-column2{
+	float: right; height: 24.8785px; min-height: 1px; width: 113.646px; perspective-origin: 56.8229px 12.4306px; transform-origin: 56.8229px 12.4392px;
+}
+.a-section-input1 {
+	height: 18.8889px; margin-bottom: 6px; text-align: right; width: 113.646px; perspective-origin: 56.8229px 9.44444px; transform-origin: 56.8229px 9.44444px;
+}
+.pc-char-limit-length {
+	text-align: right;
+}
+.a-size-small {
+	font-size: 12px; line-height: 18px; text-align: right;
+}
+.a-row1 {
+	height: 108.733px; margin-bottom: 4px; margin-top: 10px; width: 232.188px; perspective-origin: 116.094px 54.3576px; transform-origin: 116.094px 54.3663px;
+}
+.a-column3 {
+	background-color: rgb(255, 255, 255); float: left; height: 98.7326px; margin-right: 4.63542px; margin-top: 10px; min-height: 1px; width: 232.188px; perspective-origin: 116.094px 49.3576px; transform-origin: 116.094px 49.3576px;
+}
+.a-row1 {
+	height: 59.8611px; margin-bottom: 14px; width: 232.188px; perspective-origin: 116.094px 29.9132px; transform-origin: 116.094px 29.9219px;
+}
+.a-row2{
+	height: 24.8785px; width: 232.188px; perspective-origin: 116.094px 12.4306px; transform-origin: 116.094px 12.4392px;
+}
+.a-input-text{
+	border-color: rgb(148, 148, 148) rgb(166, 166, 166) rgb(166, 166, 166); border-radius: 3px; border-style: solid; border-width: 0.989583px; box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px 0px, rgba(0, 0, 0, 0.07) 0px 1px 0px 0px inset; height: 30.9896px; line-height: normal; margin-left: 5px; min-width: 200px; padding: 3px 7px; width: 232.188px; perspective-origin: 116.094px 15.4861px; transform-origin: 116.094px 15.4948px;
+}
+.a-form-label {
+	height: 20.8854px; overflow-wrap: break-word; width: 232.188px; perspective-origin: 116.094px 10.434px; transform-origin: 116.094px 10.434px;
+}
+/********************/
+
+.a-input-text:focus,a-icon a-icon-close:focus
+{
+	/*border-color: #e77600;*/
+	border-color: #f87add;
+	box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
+}
+.a-button-close:focus
+{
+	background-color: transparent;
+	border-color: #e77600;
+	box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
+	outline: 0;
+	padding: 8px;
+}
+.a-button-close:hover
+{
+	cursor: pointer;
+}
+.a-button-close:hover .a-icon-close
+{
+	opacity: .8;
+}
+
+/**********/
+.a-button-inner
+{
+	/*background: #f4d078;
+	background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+	background: -webkit-linear-gradient(top,#f7dfa5,#f0c14b);*/
+	background:-webkit-linear-gradient(top,#f87add,#f82ff8e3)
+}
+.a-button-inner:hover
+{
+	/*background: #f1c861;
+	background: linear-gradient(to bottom,#f5d78e,#eeb933);
+	background: -webkit-linear-gradient(top,#f5d78e,#eeb933);*/
+	background:-webkit-linear-gradient(top,#ecdee9,#ff00ff)
+}
+.a-button-inner:active
+{
+	background-color: #f87add;
+	background-image: none;
+}
+.a-button-primary.a-button-focus,.a-button-primary:focus,.a-button-primary:hover,.a-button-primary:hover:active
+{
+	border-color: #a88734 #9c7e31 #846a29;
+}
+.a-button-primary:active
+{
+	border-color: #a88734 #9c7e31 #9c7e31;
+}
+.a-button-primary.a-button-focus,.a-button-primary:focus
+{
+	border-color: #e77600;
+}

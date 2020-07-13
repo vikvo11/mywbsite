@@ -1,0 +1,147 @@
+
+
+
+<!--
+<ul> 
+		<li ng-repeat="row in jsondata">
+		     {{ row.id + ', ' + row.img + ', ' + row.price}} <br>
+	        </li>
+</ul>
+-->
+ <!-- ng-repeat="row in glassID"  <body> -->
+ 
+ <body>
+<!--  
+<div data-ng-repeat="i in [1,2,3,4,5]">
+  do something
+</div
+-->
+
+      <div class="container" style="padding-top:5rem">
+
+
+	
+<a> {{glassID}} </a>
+
+<a href ng-click="goCats = !goCats">GLASSES</a>
+
+<div id="glasses" class="block3" ng-show="!goCats">
+		<div class="container">
+			<div class="b3_line" >
+				<div class="b3_right" style ="float: left; width: 97.75%;">
+					<div class="glasses">
+						<div class="b3_right_top">							
+						</div>
+						<div id="carousel" class="b3_right_carousel owl-carousel">
+						
+										
+										<div class="b3_right_carousel_item">
+												
+											<div class="thumbnail">
+											<img ng-src="/static/{{glassID[0].img}}" src="/static/{{glassID[0].img}}">
+
+											<h4 class="ng-binding">Motorola XOOM™ with Wi-Fi</h4>
+											<p class="ng-binding">The Next, Next Generation
+											Experience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).</p>
+											<h3 class="price ng-binding">${{glassID[0].price}}</h3>
+											<ngcart-addtocart id="{{glassID[0].u_id}}" name="{{glassID[0].name}}" price="{{glassID[0].price}}" quantity="1" quantity-max="5" data="item"></ngcart-addtocart>
+										</div>
+												
+										</div>
+										
+										<div class="b3_right_carousel_item">
+												
+											<div class="thumbnail">
+											<img ng-src="/static/{{glassID[1].img}}" src="/static/{{glassID[1].img}}">
+
+											<h4 class="ng-binding">Motorola XOOM™ with Wi-Fi</h4>
+											<p class="ng-binding">The Next, Next Generation
+											Experience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).</p>
+											<h3 class="price ng-binding">${{glassID[1].price}}</h3>
+											<ngcart-addtocart id="{{glassID[1].u_id}}" name="{{glassID[1].name}}" price="{{glassID[1].price}}" quantity="1" quantity-max="5" data="item"></ngcart-addtocart>
+										</div>
+												
+										</div>
+										
+										
+										<div class="b3_right_carousel_item">
+												
+											<div class="thumbnail">
+											<img ng-src="/static/{{glassID[2].img}}" src="/static/{{glassID[2].img}}">
+
+											<h4 class="ng-binding">Motorola XOOM™ with Wi-Fi</h4>
+											<p class="ng-binding">The Next, Next Generation
+											Experience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).</p>
+											<h3 class="price ng-binding">${{glassID[2].price}}</h3>
+											<ngcart-addtocart id="{{glassID[2].u_id}}" name="{{glassID[2].name}}" price="{{glassID[2].price}}" quantity="1" quantity-max="5" data="item"></ngcart-addtocart>
+										</div>
+												
+										</div>
+										
+										<div class="b3_right_carousel_item">
+												
+											<div class="thumbnail">
+											<img ng-src="/static/{{glassID[3].img}}" src="/static/{{glassID[3].img}}">
+
+											<h4 class="ng-binding">Motorola XOOM™ with Wi-Fi</h4>
+											<p class="ng-binding">The Next, Next Generation
+											Experience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).</p>
+											<h3 class="price ng-binding">${{glassID[3].price}}</h3>
+											<ngcart-addtocart id="{{glassID[3].u_id}}" name="{{glassID[3].name}}" price="{{glassID[3].price}}" quantity="1" quantity-max="5" data="item"></ngcart-addtocart>
+										</div>
+												
+										</div>
+										
+										<div class="b3_right_carousel_item">
+												
+											<div class="thumbnail">
+											<img ng-src="/static/{{glassID[4].img}}" src="/static/{{glassID[4].img}}">
+
+											<h4 class="ng-binding">Motorola XOOM™ with Wi-Fi</h4>
+											<p class="ng-binding">The Next, Next Generation
+											Experience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).</p>
+											<h3 class="price ng-binding">${{glassID[4].price}}</h3>
+											<ngcart-addtocart id="{{glassID[4].u_id}}" name="{{glassID[4].name}}" price="{{glassID[4].price}}" quantity="1" quantity-max="5" data="item"></ngcart-addtocart>
+										</div>
+												
+										</div>
+										
+										
+										
+											</div>
+											</div>
+
+											</div>
+					</div>
+				</div>
+			</div>
+		
+		
+		
+		</div>
+	</div>
+
+
+
+  
+  
+  
+
+ 
+
+      </div>
+
+
+  
+  </body>
+  
+ 
+  
+
+	
+
+	<!-- -->
+<script type="text/javascript" src="/static/js/main.js"></script>
+
+
+

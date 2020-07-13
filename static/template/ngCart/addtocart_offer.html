@@ -1,0 +1,87 @@
+
+<!--
+<form  name="myForm" novalidate>
+
+<p>First Name:<br>
+<input type="text" name="fname" placeholder='Виктор + Елена' ng-model="name" required>
+<span style="color:red" ng-show="myForm.fname.$dirty && myForm.fname.$invalid">
+<span ng-show="myForm.fname.$error.required">First name is required!!!.</span>
+</span>
+</p>
+<p>Last Name :<br>
+<input type="text" name="lname" ng-model="lname" required>
+<span style="color:red" ng-show="myForm.lname.$dirty && myForm.lname.$invalid">
+<span ng-show="myForm.lname.$error.required">Last name is required.</span>
+</span>
+</p>
+<p>Address :<br>
+<input type="text" name="address" ng-model="address" required>
+<span style="color:red" ng-show="myForm.address.$dirty && myForm.address.$invalid">
+<span ng-show="myForm.address.$error.required">Username is required.</span>
+</span>
+</p>
+
+<p>Email:<br>
+<input type="email" name="email" ng-model="email" required>
+<span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+<span ng-show="myForm.email.$error.required">Email is required.</span>
+<span ng-show="myForm.email.$error.email">Invalid email address.</span>
+</span>
+</p>
+<p>Price:<br>
+<input type="text" name="price" ng-model="price" required>
+<span style="color:red" ng-show="myForm.price.$dirty && myForm.price.$invalid">
+<span ng-show="myForm.price.$error.required">Email is required.</span>
+<span ng-show="myForm.price.$error.email">Invalid email address.</span>
+</span>
+</p>
+<p>
+<input type="submit" id="offer_button" class="nav-link btn-zakaz" ng-click="inOfferID(); ngCart.addItem(id, name, price, q, data);" ng-transclude ng-disabled="myForm.fname.$dirty && myForm.fname.$invalid || myForm.lname.$dirty && myForm.lname.$invalid || myForm.address.$dirty && myForm.address.$invalid || myForm.email.$dirty && myForm.email.$invalid">
+</p>
+</form>	-->
+
+
+
+
+<div class="a-box-inner" ng-controller="SlickController">
+
+									<div class="pc-popover-footer-wrapper">
+										<form method="post" id="addToCart" class="pc-buy-box ng-pristine ng-valid" style="height: 79.9306px; margin-bottom: 15px; text-align: center; width: 252.188px; perspective-origin: 126.094px 39.9653px; transform-origin: 126.094px 39.9653px;">
+										
+												<div class="a-spacing-small">
+												
+													<div class="a-column a-span7" style="float: left; height: 25.5556px; margin-right: 5.03472px; min-height: 1px; text-align: center; width: 144.861px; perspective-origin: 72.4132px 12.7778px; transform-origin: 72.4219px 12.7778px;">
+												
+														<span class="a-font_price" style="">Price:
+														
+														</span>
+														<!--<span id="ac-atc-price-value" class="a-color-price">£29.50</span> -->
+														
+													<!--	<span ng-show="quantityMax && !inCart()">Кол:
+												<select name="quantity" id="quantity" ng-model="q"
+												ng-options=" v for v in qtyOpt"></select>
+												</span> -->
+   
+														
+														
+													</div>
+												
+												</div>
+												<div class="a-row a-spacing-top-medium" style="height: 30.9722px; margin-top: 18px; text-align: center; width: 252.188px; perspective-origin: 126.094px 15.4688px; transform-origin: 126.094px 15.4774px;">
+            
+
+
+												<span class="a-declarative" style="text-align: center;">
+												<span id="buybox-atc-btn" class="a-add_button" style="">												
+												<span class="a-button-inner" ng-click="inOfferID(); ngCart.addItem(id, name, price, q, data, offer_names+' '+offer_date);">
+												<i class="a-icon-cart"></i>
+												<input id="pc-atc" class="a-button-input" type="submit"  aria-labelledby="buybox-atc-btn-announce">
+												<span id="buybox-atc-btn-announce" class="a-button-text" aria-hidden="true" >Add to Basket
+												
+												</span></span></span>
+													</span> <!---->
+													
+												</div>
+										</form>
+									</div>
+								</div>

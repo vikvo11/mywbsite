@@ -1,0 +1,207 @@
+<!--
+<div class="row ng-scope">
+{% for item in cart_items %}
+
+{% if item.id == item_id %}	
+<div class="col-xs-4 ng-scope">
+<div class="thumbnail">
+<img ng-src="{{ url_for('static', filename=item.img)}}" src="{{ url_for('static', filename=item.img)}}">
+
+                <h4 class="ng-binding">Motorola XOOM™ with Wi-Fi</h4>
+                <p class="ng-binding">The Next, Next Generation
+
+Experience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).</p>
+                <h3 class="price ng-binding">${{item.price}}</h3>
+<ngcart-addtocart id="{{item.u_id}}" name="{{item.name}}" price="{{item.price}}" quantity="1" quantity-max="5" data="item"></ngcart-addtocart>
+</div>
+
+
+</div>
+{% endif %}
+{% endfor %}
+{{item_id}}
+</div>
+-->
+
+
+
+
+<div id="overlay_offer"></div>
+<div id="magnify_offer">
+<!--<div ui-view="examples"></div> -->
+
+<div ui-view="offer_cart" class="slide1">
+
+</div>
+
+<!--<div ui-view="offer_test" style="padding-top:5rem; position: absolute;">
+</div>-->
+
+<i></i>
+</div>
+
+
+{% from "includes/_formhelpers.html" import render_field %}
+{% for type in type_index %}
+<!--<a>{{type.text}}</a>-->
+<!--
+<div id="glasses" class="block3" ng-show="!goCats">
+		<div class="container">
+			
+		
+					
+			<div class="b3_line" >
+				<div class="b3_right" style ="float: left; width: 97.75%;">
+					<div class="glasses">
+						<div class="b3_right_top">							
+						</div>
+						<div id="carousel" class="b3_right_carousel owl-carousel">
+						
+										{% for item in cart_items %}
+										
+
+										{% if item.id == item_id and item.type == type.type %}
+										<div class="b3_right_carousel_item">
+												
+											<div class="thumbnail">
+											<img ng-src="{{ url_for('static', filename=item.img)}}" src="{{ url_for('static', filename=item.img)}}">
+
+									
+										<form method="POST" action="" name="cart{{item.u_id}}" >
+												
+											<div class="form-group">
+												{{render_field(form.names,required=True, maxlength="25", placeholder='Виктор + Елена', class_="form-control")}}
+												{{render_field(form.date,required=True, maxlength="10", placeholder='11.11.11', class_="form-control")}}
+											</div>
+											
+											
+											
+											
+											 
+											
+										</form>
+ 
+											<ngcart-addtocart id="{{item.u_id}}" name="{{item.name}}" price="{{item.price}}" quantity="1" quantity-max="5" data="item"></ngcart-addtocart>
+										</div>
+												
+										</div>
+										{% endif %}
+										{% endfor %}
+											</div>
+											</div>
+
+											</div>
+					</div>
+				</div>
+			</div>
+-->
+
+
+<div class="container" ng-controller="SlickController">
+
+<!--
+		<form  name="myForm" novalidate>
+
+<p>First Name:<br>
+<input type="text" name="fname" placeholder='Виктор + Елена' ng-model="fname" required>
+<span style="color:red" ng-show="myForm.fname.$dirty && myForm.fname.$invalid">
+<span ng-show="myForm.fname.$error.required">First name is required!!!.</span>
+</span>
+</p>
+<p>Last Name :<br>
+<input type="text" name="lname" ng-model="lname" required>
+<span style="color:red" ng-show="myForm.lname.$dirty && myForm.lname.$invalid">
+<span ng-show="myForm.lname.$error.required">Last name is required.</span>
+</span>
+</p>
+<p>Address :<br>
+<input type="text" name="address" ng-model="address" required>
+<span style="color:red" ng-show="myForm.address.$dirty && myForm.address.$invalid">
+<span ng-show="myForm.address.$error.required">Username is required.</span>
+</span>
+</p>
+
+<p>Email:<br>
+<input type="email" name="email" ng-model="email" required>
+<span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+<span ng-show="myForm.email.$error.required">Email is required.</span>
+<span ng-show="myForm.email.$error.email">Invalid email address.</span>
+</span>
+</p>
+<p>
+<input type="submit" ng-disabled="myForm.fname.$dirty && myForm.fname.$invalid || myForm.lname.$dirty && myForm.lname.$invalid || myForm.address.$dirty && myForm.address.$invalid || myForm.email.$dirty && myForm.email.$invalid">
+</p>
+</form>	
+	-->		
+		
+					<div >
+					
+						
+	<slick class="slider" style="display: block; background-image: none; " settings="slickConfig3" ng-if="slickConfig4Loaded" dots="true">
+						
+			
+				
+				
+				
+                
+	{% for item in check_items %}
+										
+
+										{% if item.gr_id == item_id and item.type == type.type %}
+										
+												
+											<div class="thumbnail">
+											<div class="b3_right_carousel_item">
+												<div class="b3_right_carousel_img">
+											<!--<img ng-src="{{ url_for('static', filename=item.img)}}" src="{{ url_for('static', filename=item.img)}}" ng-mousedown="setCurrentPos($event)" ng-click="ctrlClickHandler($event);" 
+											style="padding-right: 10px; padding-left: 10px; cursor: pointer;"> -->
+											<img ng-src="{{ url_for('static', filename=item.img)}}" src="{{ url_for('static', filename=item.img)}}" style="padding-right: 10px; padding-left: 10px; cursor: pointer;">
+												</div>
+												<div class="b3_right_carousel_price">
+												<!--Цена <span>{{item.price}}</span> руб.-->
+											<!--	<button id="{{item.u_id}}" name="{{item.id}}" class="nav-link btn-zakaz"	
+											ng-click="ctrlClickHandlerOffer($event);"
+											>Выбрать</button> -->
+											<!---->
+												<ngcart-addtocartoffer_ id="{{item.u_id}}" name="{{item.name}}" price="{{item.price}}" quantity="1" quantity-max="5" text="{{item.u_id}}" data='item' img={{item.img_o}} imgg={{item.img_g}} imgr={{item.img_r}}></ngcart-addtocartoffer_>
+												
+												</div>
+											</div>
+											  
+											
+										<!--	
+											
+										<form method="POST" action="" name="cart{{item.u_id}}" >
+										
+											<div class="form-group">
+												{{render_field(form.names,required=True, maxlength="25", placeholder='Виктор + Елена', class_="form-control")}}
+												{{render_field(form.date,required=True, maxlength="10", placeholder='11.11.11', class_="form-control")}}
+											</div>
+																				
+										</form>
+											<button id="{{item.u_id}}" name="{{item.id}}" class="nav-link btn-zakaz"	
+											ng-click="ctrlClickHandlerOffer($event);"
+											>Выбрать</button>
+											
+											<ngcart-addtocart id="{{item.u_id}}" name="{{item.name}}+GlassID={{item.id}} +GravID={{item.u_id}} " price="{{item.price}}" quantity="1" quantity-max="5" data="item"></ngcart-addtocart>
+										-->	
+											
+										</div>
+												
+										
+										{% endif %}
+										{% endfor %}
+											
+												
+										
+                
+				
+				
+            </slick>
+			
+			
+					</div>
+					
+				</div>
+	{% endfor %}
+	{% include 'includes/blocks/_footer.html' %}

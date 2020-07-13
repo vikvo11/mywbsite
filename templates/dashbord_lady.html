@@ -1,0 +1,55 @@
+{% extends 'layout_cart.html' %}
+
+
+
+ <!--  <h1>Dashboard <small> Welcome {{session.username}}</small></h1>
+  <a class="btn btn-success" href="/add_article"> Add Article</a>
+  <hr>-->
+
+{% block body %}
+{% include 'includes/blocks/_header.html' %}
+{% include 'includes/blocks/_h_menu.html' %}
+{% include 'includes/blocks/_block0.html' %}
+
+<div ng-controller="SlideAnimation">
+<div ui-view="gravs" class="slide-anim"></div>
+<!--<div ui-view="offer_test"></div>-->
+	<div class="Garant">
+		<a><img ng-src="static/lady/images/Garant.svg" style="padding-top: 30px; padding-bottom: 30px;"></a>
+	</div>
+	
+	
+	<ul class="nav nav-mytabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" ui-sref = "tab1" role="tab" aria-controls="home" aria-selected="true">Бокалы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="history-tab" data-toggle="tab" ui-sref = "tab2" role="tab" aria-controls="history" aria-selected="false">Замочки</a>
+          </li>
+        </ul>
+
+	  <!--<div class="tabs">
+      <div ui-view="product" ng-class="slide"></div>
+     </div>-->
+	 <div ui-view="product" class="slide-anim"></div>
+		
+<!---->
+
+<!--% include 'includes/blocks/_block1.html' % -->
+<!--% include 'includes/blocks/_block2.html' % -->
+<div ui-view="examples" class="slide-anim"></div>
+</div>
+
+{% include 'includes/blocks/_footer.html' %}
+<!--  <div ng-app="myApp" ng-controller="myController"> 
+	    <ul> 
+		<li ng-repeat="row in jsondata">
+		     {{'{{ row.id + ', ' + row.img + ', ' + row.price}}'}} <br>
+	        </li>
+	    </ul>
+	</div> 
+ 
+-->
+
+
+{% endblock %}

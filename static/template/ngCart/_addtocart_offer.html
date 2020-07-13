@@ -1,0 +1,104 @@
+
+<div class="container" ng-controller="SlickController">
+<!--
+<form  name="myForm" novalidate>
+
+<p>First Name:<br>
+<input type="text" name="fname" placeholder='Виктор + Елена' ng-model="name" required>
+<span style="color:red" ng-show="myForm.fname.$dirty && myForm.fname.$invalid">
+<span ng-show="myForm.fname.$error.required">First name is required!!!.</span>
+</span>
+</p>
+<p>Last Name :<br>
+<input type="text" name="lname" ng-model="lname" required>
+<span style="color:red" ng-show="myForm.lname.$dirty && myForm.lname.$invalid">
+<span ng-show="myForm.lname.$error.required">Last name is required.</span>
+</span>
+</p>
+<p>Address :<br>
+<input type="text" name="address" ng-model="address" required>
+<span style="color:red" ng-show="myForm.address.$dirty && myForm.address.$invalid">
+<span ng-show="myForm.address.$error.required">Username is required.</span>
+</span>
+</p>
+
+<p>Email:<br>
+<input type="email" name="email" ng-model="email" required>
+<span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+<span ng-show="myForm.email.$error.required">Email is required.</span>
+<span ng-show="myForm.email.$error.email">Invalid email address.</span>
+</span>
+</p>
+<p>Price:<br>
+<input type="text" name="price" ng-model="price" required>
+<span style="color:red" ng-show="myForm.price.$dirty && myForm.price.$invalid">
+<span ng-show="myForm.price.$error.required">Email is required.</span>
+<span ng-show="myForm.price.$error.email">Invalid email address.</span>
+</span>
+</p>
+<p>
+<input type="submit" id="offer_button" class="nav-link btn-zakaz" ng-click="inOfferID(); ngCart.addItem(id, name, price, q, data);" ng-transclude ng-disabled="myForm.fname.$dirty && myForm.fname.$invalid || myForm.lname.$dirty && myForm.lname.$invalid || myForm.address.$dirty && myForm.address.$invalid || myForm.email.$dirty && myForm.email.$invalid">
+</p>
+</form>	
+
+-->
+
+   
+        
+		
+		<!--
+<div>
+    <input type="text" ng-model="name" / >
+    <p>{{name}}</p>
+</div> 
+<div>
+    <input type="text" ng-model="id" / >
+    <p>{{id}}</p>
+</div>
+-->
+        <!--<a class="btn btn-sm btn-primary"
+           ng-click="ngCart.addItem(id, name, price, q, data)"
+           ng-transclude>Add To Card</a> -->
+		   
+		   
+			 
+			
+		<!--<button id="offer_button" class="nav-link btn-zakaz" ng-click="inOfferID(); ngCart.addItem(id, name, price, q, data);" ng-transclude>Добавить</button> 
+		-->
+		
+	<div>	
+		
+   <mark id="offer_button" ng-show="!inCart()" style="background-color:white;">  
+   <button  class="nav-link btn-zakaz" ng-click="ctrlClickHandlerOffer($event,id,name,price,text,img,imgg,imgr);" ng-transclude>Выбрать</button>
+   
+  <!-- <button  class="nav-link btn-zakaz" ng-click="ctrlClickHandlerOffer($event);" ng-transclude>Выбрать</button>-->
+   {{imgG}}
+   </mark>
+   
+   
+   
+   <div>
+
+	
+   <mark  ng-show="inCart()" style="background-color:white;">
+   <button  class="nav-link btn-zakaz" style="cursor: pointer;"
+           ng-click="ngCart.removeItemById(id)"
+           ng-transclude>Убрать</button>
+   
+	<!--<button ng-show="inCart()" class="btn-roz" style="cursor: pointer;"
+           ng-click="ngCart.removeItemById(id)"
+           ng-transclude>Убрать</button>-->
+	
+	 </div>
+<!--	
+    <mark  ng-show="inCart()">Товар добавлен
+	
+	<button  class="btn-roz"
+           ng-click="ngCart.removeItemById(id)"
+           ng-transclude>Убрать</button>
+    </mark>
+	-->
+
+	</div>
+
+</div>

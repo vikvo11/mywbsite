@@ -1,0 +1,93 @@
+
+
+
+<!--
+<ul> 
+		<li ng-repeat="row in jsondata">
+		     {{ row.id + ', ' + row.img + ', ' + row.price}} <br>
+	        </li>
+</ul>
+-->
+ <!-- ng-repeat="row in glassID"  <body> -->
+
+
+      <link rel="stylesheet" href="static/slick/css/app.dist.css">
+	
+
+ <div ng-controller="SlickController">
+ 1213 ={{number1}}
+ 1213 ={{glassID}}
+ <section>
+    <div class="container">
+
+       
+            <h2>Гравировка на бокалах</h2>				
+			<div class="b3_line" >
+					<div class="b3_left">
+						<img src="/static/img/01.jpg" alt="" />
+					</div>	
+			
+				<div class="b3_right">
+				
+					<div class="glasses">
+						<div class="b3_right_top">
+							<div class="b3_right_title">Выберите ваш бокал:</div>
+						</div>
+
+
+            <slick class="slider" settings="slickConfig3" ng-if="slickConfig1Loaded" dots="true">
+                <div ng-repeat="glass in glassID">
+                  <!--  <div class="" ng-include="'tpl2.html'"></div> 
+					<div ng-repeat="i in number2  track by $index">-->
+				   <div class="b3_right_carousel_item">
+												
+											<div class="thumbnail">
+											<img ng-src="/static/{{glass.img}}" src="/static/{{glass.img}}">
+
+											<h4 class="ng-binding">Motorola XOOM™ with Wi-Fi</h4>
+											<p class="ng-binding">The Next, Next Generation
+											Experience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).</p>
+											<h3 class="price ng-binding">${{glass.price}}</h3>
+											<ngcart-addtocart id="{{glass.u_id}}" name="{{glass.name}}" price="{{glass.price}}" quantity="1" quantity-max="5" data="item"></ngcart-addtocart>
+										</div>
+												
+										</div>
+                
+				</div>
+				
+            </slick>
+	</div>
+	</div>
+      <!--      <div>
+                <button class="btn btn-info" ng-click="slickConfig.method.slickFilter(':even')">Filter</button>
+                <button class="btn btn-info" ng-click="slickConfig.method.slickUnfilter()">unFilter</button>
+                <button class="btn btn-info" ng-click="slickConfig.method.slickGoTo(2)">GoTo(2)</button>
+                <button class="btn btn-info" ng-click="slickConfig.method.slickPrev()">Prev()</button>
+                <button class="btn btn-info" ng-click="slickConfig.method.slickNext()">Next()</button>
+                <button class="btn btn-info" ng-click="updateNumber1()">Update/Add()</button>
+                <button class="btn btn-info" ng-click='slickConfig.method.slickRemove(3)'>Remove(3)</button>
+                <button class="btn btn-info" ng-click='slickConfig.method.slickPlay()'>Play()</button>
+                <button class="btn btn-info" ng-click='slickConfig.method.slickPause()'>Pause()</button>
+            </div>  -->
+
+					
+        
+  
+
+<div class="b3_right_text">* Цена указана за 2 бокала с гравировкой.  </div>
+ </div>  
+ </div> 
+ </section> 
+ 
+  
+
+	
+
+	<!-- 
+<script type="text/javascript" src="/static/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+
+<script src="static/slick/js/angular-slick.js"></script>
+<script src="static/slick/js/angular-slick.min.js"></script>-->
+

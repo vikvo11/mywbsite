@@ -1,0 +1,89 @@
+
+
+
+ 
+ <body>
+
+
+      <div class="container" ng-controller="SlickController" style="padding-top:5rem">
+
+
+
+<a href ng-click="goCats = !goCats">GLASSES</a>
+
+<div id="bottle" class="block4" ng-show="!goCats">
+		<div class="container">
+			<h2>Заказ</h2>				
+			<div class="b3_line" >
+					<div class="b3_left">
+						<!--<img ng-src="/static/img/02.jpg" ng-click="ctrlClickHandler($event);" style="padding-right: 10px; padding-left: 10px; cursor: pointer;"> -->
+						<img ng-src="/static/img/02.jpg" ng-mousedown="setCurrentPos($event)" ng-click="ctrlClickHandler($event);" style="padding-right: 10px; padding-left: 10px; cursor: pointer;">
+						
+					</div>	
+			
+				<div class="b3_right">
+					<img ng-src="/static/img/02.jpg" ng-mousedown="setCurrentPos($event)" ng-click="ctrlClickHandler($event);" style="padding-right: 10px; padding-left: 10px; cursor: pointer;">
+					
+					
+
+						
+										
+									
+									
+									<!--<div class="b3_right_carousel_item">
+												<div class="b3_right_carousel_img"><img src="/static/source/bottles/b02.png" alt="" /></div>
+												<div class="b3_right_carousel_price">Цена <span>1300</span> руб.</div>
+												
+											<div class="b3_right_carousel_button_n"><a href="bottles?item_id=2001"  class="btn" ><span>Далее</span></a> <a href = "main#!/bottle/2001"> 2001 </a>	</div> 
+											
+												
+
+															
+											</div>
+									-->
+									
+									
+											
+																
+																											</div>
+										
+		
+																		
+						<!--<ngcart-addtocart id=10026 name="10026" price="1300" quantity="1" quantity-max="5" data="item"></ngcart-addtocart>-->
+<!--				-->
+<ngcart-addtocartoffer id="" name="" price="" quantity="1" quantity-max="5" text ="" data="" class="ng-isolate-scope"></ngcart-addtocartoffer>
+											</div>
+
+																</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+  
+  
+  
+
+ 
+
+      </div>
+
+
+  
+  </body>
+  
+ 
+  
+
+	
+
+<script type="text/javascript" src="/static/js/main.js"></script>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+
+
+</html>

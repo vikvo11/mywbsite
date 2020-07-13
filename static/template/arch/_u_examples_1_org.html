@@ -1,0 +1,108 @@
+
+
+
+<!--
+<ul> 
+		<li ng-repeat="row in jsondata">
+		     {{ row.id + ', ' + row.img + ', ' + row.price}} <br>
+	        </li>
+</ul>
+-->
+ <!-- ng-repeat="row in jsondata"  <body> 
+ <link rel="stylesheet" href="static/slick/css/app.dist.css">-->
+ <link rel="stylesheet" href="static/slick/css/app.dist.css">
+ <link rel="stylesheet" href="static/slick/css/slick.min.css">
+ <link rel="stylesheet" href="static/css/minimized.css">
+	<!-- <link rel="stylesheet" href="static/slick/css/slick-theme.min.css"-->
+
+<!--  
+<div data-ng-repeat="i in [1,2,3,4,5]">
+  do something
+</div
+
+
+{{gravs[0].img}}
+{{examples_count}}
+{{number}}-->
+
+		<div class="container" ng-controller="SlickController">
+	<!--	
+<div class="image__wrapper">
+ <img src="/static/lady/images/examples/DPP_0057.png" class="minimized" alt="клик для увеличения" />
+ <img data-id='102' src="/static/lady/images/examples/DPP_0057.png" ng-click="ctrlClickHandler($event);" />
+</div>
+		-->
+			<h2>Наши работы</h2>				
+			
+		
+					<div id="exampl" >
+					
+						<slick class="slider" style="display: block; background-image: none;
+    background-repeat: no-repeat;
+	background-size: cover;" settings="slickConfig2" ng-if="slickConfig4Loaded" dots="true">
+						<!--<slick class="slider" settings="slickConfig2" ng-if="slickConfig3Loaded" dots="true">
+						<slick class="slider" settings="slickConfig3" ng-if="slickConfig3Loaded" dots="true">
+				<div ng-repeat="(glass,val) in gravs">-->
+			
+				<div ng-repeat="glass in examples_count track by $index">
+				
+				
+                  <!--  <div class="" ng-include="'tpl2.html'"></div> 
+					<div ng-repeat="i in number2  track by $index">-->
+	
+											<div>
+											 <!--<img ng-src="/static/lady/images/grav-1.png">
+											 <img ng-src="{{glass.img}}" style="-->
+											 <!--<img ng-src="{{glass.img}}" style="
+												padding-top: 260px; width: 270px;">
+												<span>{{$index}}</span>  background-image: url(/static/lady/images/grav-{{$index+1}}.png)-->
+													
+											  <img ng-src="{{examples[$index].img}}" ng-click="ctrlClickHandler($event);" style="padding-right: 10px; padding-left: 10px; cursor: pointer;"> 
+											  
+										<!--	  
+											  <img ng-src="/static/lady/images/examples/DPP_0057.png" ng-click="ctrlClickHandler($event);" style="padding-right: 10px; padding-left: 10px; cursor: pointer;">
+											  -->
+											  
+												<!--<img ng-src="{{examples[$index].img}}" ng-click="ctrlClickHandler($event);" style="padding-top: 230px; width: 250px;;">-->
+												
+											 
+											<!--<svg class="svg-inline--fa fa-ruble-sign fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M239.36 320C324.48 320 384 260.542 384 175.071S324.48 32 239.36 32H76c-6.627 0-12 5.373-12 12v206.632H12c-6.627 0-12 5.373-12 12V308c0 6.627 5.373 12 12 12h52v32H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v52c0 6.627 5.373 12 12 12h58.56c6.627 0 12-5.373 12-12v-52H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12H146.56v-32h92.8zm-92.8-219.252h78.72c46.72 0 74.88 29.11 74.88 74.323 0 45.832-28.16 75.561-76.16 75.561h-77.44V100.748z"></path></svg>-->
+										</div>
+												
+										
+                
+				</div>
+				
+            </slick>
+					</div>
+					
+				</div>
+			
+		
+	</div>
+
+
+
+  
+  
+  
+
+ 
+
+      </div>
+
+
+  
+
+  
+ 
+  
+
+	
+
+	<!-- 
+<script type="text/javascript" src="/static/js/main.js"></script>-->
+
+
+
+

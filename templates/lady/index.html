@@ -1,0 +1,95 @@
+<html ng-app="myApp" lang="ru" class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+	<!----><link rel="stylesheet" href="static/lady/css/start.css">
+	<link rel="stylesheet" href="static/lady/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/lady/css/style.css">
+	<!--<link rel="stylesheet" href="/static/css/style_cart.css">-->
+    <title>Lady-Marlene</title> 
+  </head>
+  <body>
+   <header class="header">
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-3 top-contact pt-4">
+                   <p><svg class="svg-inline--fa fa-phone fa-w-16" data-fa-transform="rotate-90" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.5em;"><g transform="translate(256 256)"><g transform="translate(0, 0)  scale(1, 1)  rotate(90 0 0)"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z" transform="translate(-256 -256)"></path></g></g></svg><!-- <i class="fas fa-phone" data-fa-transform="rotate-90"></i> --> <a href="tel:89788908978">+7 (777) 777-77-77</a></p>
+                   <p><svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg><!-- <i class="fas fa-envelope"></i> --> <a href="mailto:info@ledymarlene.ru">info@ladymarlene.ru</a></p>
+               </div>
+               <div class="col-lg-6 text-center">
+                   <p><img src="static/lady/images/Lady-Marlene.png" alt="логотип"></p>
+                   <p>Индивидуальная свадебная гравировка</p>
+                </div>
+               <div class="col-lg-3 pt-4">
+                   <ul class="nav right-top">
+                       <li class="cart"><svg class="svg-inline--fa fa-shopping-cart fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg><!-- <i class="fas fa-shopping-cart"></i> --></li>
+                       <!-- <li class="cart-right">Корзина (0) | <strong>7 000</strong> -->
+					   <li><a href="/cart">
+					<ngcart-summary></ngcart-summary>
+					</a></li>
+
+					   <svg class="svg-inline--fa fa-ruble-sign fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M239.36 320C324.48 320 384 260.542 384 175.071S324.48 32 239.36 32H76c-6.627 0-12 5.373-12 12v206.632H12c-6.627 0-12 5.373-12 12V308c0 6.627 5.373 12 12 12h52v32H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v52c0 6.627 5.373 12 12 12h58.56c6.627 0 12-5.373 12-12v-52H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12H146.56v-32h92.8zm-92.8-219.252h78.72c46.72 0 74.88 29.11 74.88 74.323 0 45.832-28.16 75.561-76.16 75.561h-77.44V100.748z"></path></svg><!-- <i class="fas fa-ruble-sign"></i> --><br><a href="/cart">Оформить заказ</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </header>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Сделать заказ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Наши работы</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Доставка и оплата</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <p class="size-33"><span class="bgFFF0FF">{{block2.b2_title}}</span></p>
+                <h2 class="size-72 c-roz">Lady Marlene</h2>
+               <!--!			   <p class="w-360">Свадьба - день, который вы ждете с трепетом и будете вспоминать всю жизнь. Сохранить память об этом важном событии можно с помощью гравировки на свадебных бокалах.  Мы с радостью поможем сделать главный день в вашей жизни оригинальным и незабываемым!</p> -->
+			   <p class="w-360">{{block2.b2_text}}</p>
+			   
+                <a href="#" class="btn btn-danger">Заказать гравировку</a>
+            </div>
+            <div class="col-lg-5 blok-bokal"><img class="bokal" src="static/lady/images/glass-main.png" alt="#"></div>
+        </div>
+    </div>
+</section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="static/lady/js/bootstrap.min.js"></script>
+    <script defer="" src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+	<script src="/static/lady/js/ngcard/dist/ngCart.js"></script>
+	<script src="//unpkg.com/angular-ui-router@0.4.2/release/angular-ui-router.js"></script>
+	<script src="{{ url_for('static', filename='lady/js/uiview.js')}}"></script>  
+	
+<script>
+var module = angular.module('myApp',['uiView','ngCart']);
+
+</script>
+  
+</body></html>

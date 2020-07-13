@@ -1,0 +1,75 @@
+
+
+
+
+ <!-- ng-repeat="row in jsondata"  <body> 
+ <link rel="stylesheet" href="static/slick/css/app.dist.css">-->
+ <link rel="stylesheet" href="static/slick/css/app.dist.css">
+ <link rel="stylesheet" href="static/slick/css/slick.min.css">
+ <!--<link rel="stylesheet" href="static/css/minimized.css">-->
+	<!-- <link rel="stylesheet" href="static/slick/css/slick-theme.min.css"-->
+
+
+
+		<div class="container" ng-controller="SlickController">
+
+			<h2>Наши работы</h2>				
+			
+		
+					<div id="exampl" >
+					
+						<slick class="slider" style="display: block; background-image: none;
+    background-repeat: no-repeat;
+	background-size: cover;" settings="slickConfig2" ng-if="slickConfig4Loaded" dots="true">
+						
+			
+				
+				{% for item in items %}
+				
+                
+	
+											<div>
+											
+													
+											  <img ng-src="{{ url_for('static', filename=item.img)}}" ng-mousedown="setCurrentPos($event)" ng-click="ctrlClickHandler($event);" style="padding-right: 10px; padding-left: 10px; cursor: pointer;"> 
+											  
+										
+										</div>
+												
+										
+                {% endfor %}
+				
+				
+            </slick>
+					</div>
+					
+				</div>
+			
+		
+	</div>
+
+
+
+  
+  
+  
+
+ 
+
+      </div>
+
+
+  
+
+  
+ 
+  
+
+	
+
+	<!-- 
+<script type="text/javascript" src="/static/js/main.js"></script>-->
+
+
+
+

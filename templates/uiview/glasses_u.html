@@ -1,0 +1,96 @@
+
+
+
+ 
+
+
+
+      <div class="container" style="padding-top:5rem">
+
+
+
+<a href ng-click="goCats = !goCats">GLASSES</a>
+
+<div id="glasses" class="block3" ng-show="!goCats">
+		<div class="container">
+			<h2>Гравировка на бокалах</h2>				
+			<div class="b3_line" >
+					<div class="b3_left">
+						<img src="{{ url_for('static', filename=source.block3)}}" alt="" />
+					</div>	
+			
+				<div class="b3_right">
+				
+					<div class="glasses">
+						<div class="b3_right_top">
+							<div class="b3_right_title">Выберите ваш бокал:</div>
+						</div>
+						<div id="carousel" class="b3_right_carousel owl-carousel" >
+						
+										
+									{% for item in items %}
+									
+									<div class="b3_right_carousel_item">
+												<div class="b3_right_carousel_img"><img src="{{ url_for('static', filename=item.img)}}" alt="" /></div>
+												<div class="b3_right_carousel_price">Цена <span>{{item.price}}</span> руб.</div>
+											<!--	-->
+											<div class="b3_right_carousel_button_n"><a href="glasses?item_id={{item.id}}"  class="btn" ><span>Далее</span></a> <a href = "main#!/glass/{{item.id}}"> {{item.id}} </a>	</div> 
+											
+												
+
+												<div class="b3_right_carousel_sub"></div>					
+											</div>
+									
+									{% endfor %}	
+								
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+
+																					
+											
+																
+																											</div>
+											</div>
+
+																</div>
+					</div>
+					<div class="b3_right_text">* Цена указана за 2 бокала с гравировкой.          
+        </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+  
+  
+  
+
+ 
+
+      </div>
+
+
+  
+
+  
+ 
+  
+
+	
+
+<script type="text/javascript" src="/static/js/main.js"></script>
+
+
+
+
+</html>

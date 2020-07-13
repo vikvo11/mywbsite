@@ -1,0 +1,174 @@
+
+
+
+<!--
+<ul> 
+		<li ng-repeat="row in jsondata">
+		     {{ row.id + ', ' + row.img + ', ' + row.price}} <br>
+	        </li>
+</ul>
+-->
+ <!-- ng-repeat="row in jsondata"  <body> -->
+ 
+ <body>
+<!--  
+<div data-ng-repeat="i in [1,2,3,4,5]">
+  do something
+</div
+-->
+
+      <div class="container" style="padding-top:5rem">
+
+
+
+<a href ng-click="goCats = !goCats">GLASSES</a>
+
+<div id="glasses" class="block3" ng-show="!goCats">
+		<div class="container">
+			<h2>Гравировка на бокалах</h2>				
+			<div class="b3_line" >
+					<div class="b3_left">
+						<img src="/static/img/01.jpg" alt="" />
+					</div>	
+			
+				<div class="b3_right">
+				
+					<div class="glasses">
+						<div class="b3_right_top">
+							<div class="b3_right_title">Выберите ваш бокал:</div>
+						</div>
+						<div id="carousel" class="b3_right_carousel owl-carousel" >
+						
+										
+										
+								<div class="b3_right_carousel_item">
+												<div class="b3_right_carousel_img"><img src="/static/source/b02.png" alt="" /></div>
+												<div class="b3_right_carousel_price">Цена <span>1300</span> руб.</div>
+											<!--	-->
+											<div class="b3_right_carousel_button_n"><a ui-sref = "home-glasses"  class="btn" ><span>Далее</span></a> <a ui-sref = "IdGlasses({ glassesId: glasses[0].id })"> {{glasses[0].id}} </a>	</div> 
+												
+
+												<div class="b3_right_carousel_sub"></div>					
+											</div>
+										
+										<div class="b3_right_carousel_item">
+												<div class="b3_right_carousel_img"><img src="/static/source/b03.png" alt="" /></div>
+												<div class="b3_right_carousel_price">Цена <span>1400</span> руб.</div>
+											<!--	-->
+											<div class="b3_right_carousel_button_n"><a href="glasses?item_id=1002" class="btn"><span>Далее</span></a><a ui-sref = "IdGlasses({ glassesId: glasses[1].id })"> {{glasses[1].id}} </a></div> 
+											
+												
+
+												<div class="b3_right_carousel_sub"></div>					
+											</div>
+										
+										<div class="b3_right_carousel_item">
+												<div class="b3_right_carousel_img"><img src="/static/source/b04.png" alt="" /></div>
+												<div class="b3_right_carousel_price">Цена <span>1500</span> руб.</div>
+											<!--	-->
+											<div class="b3_right_carousel_button_n"><a href="glasses?item_id=1003" class="btn"><span>Далее</span></a><a ui-sref = "IdGlasses({ glassesId: glasses[2].id })"> {{glasses[2].id}} </a></div> 
+												
+
+												<div class="b3_right_carousel_sub"></div>					
+											</div>
+										
+										<div class="b3_right_carousel_item">
+												<div class="b3_right_carousel_img"><img src="/static/source/b05.png" alt="" /></div>
+												<div class="b3_right_carousel_price">Цена <span>1600</span> руб.</div>
+											<!--	-->
+											<div class="b3_right_carousel_button_n"><a href="glasses?item_id=1004" class="btn"><span>Далее</span></a><a ui-sref = "IdGlasses({ glassesId: glasses[3].id })"> {{glasses[3].id}} </a></div> 
+												
+
+												<div class="b3_right_carousel_sub"></div>					
+											</div>
+										
+										<div class="b3_right_carousel_item">
+												<div class="b3_right_carousel_img"><img src="/static/source/b06.png" alt="" /></div>
+												<div class="b3_right_carousel_price">Цена <span>1100</span> руб.</div>
+											<!--	-->
+											<div class="b3_right_carousel_button_n"><a href="glasses?item_id=1005" class="btn"><span>Далее</span></a><a ui-sref = "IdGlasses({ glassesId: glasses[4].id })"> {{glasses[4].id}} </a></div> 
+												
+
+												<div class="b3_right_carousel_sub"></div>					
+											</div>
+										
+										<div class="b3_right_carousel_item">
+												<div class="b3_right_carousel_img"><img src="/static/source/b07.png" alt="" /></div>
+												<div class="b3_right_carousel_price">Цена <span>1600</span> руб.</div>
+											<!--	-->
+											<div class="b3_right_carousel_button_n"><a href="glasses?item_id=1006" class="btn"><span>Далее</span></a><a ui-sref = "IdGlasses({ glassesId: glasses[5].id })"> {{glasses[5].id}} </a></div> 
+												
+
+												<div class="b3_right_carousel_sub"></div>					
+											</div>
+										
+										<div class="b3_right_carousel_item">
+												<div class="b3_right_carousel_img"><img src="/static/source/b08.png" alt="" /></div>
+												<div class="b3_right_carousel_price">Цена <span>1200</span> руб.</div>
+											<!--	-->
+											<div class="b3_right_carousel_button_n"><a href="glasses?item_id=1007" class="btn"><span>Далее</span></a><a ui-sref = "IdGlasses({ glassesId: glasses[6].id })"> {{glasses[6].id}} </a></div> 
+												
+
+												<div class="b3_right_carousel_sub"></div>					
+											</div>
+										
+										<div class="b3_right_carousel_item">
+												<div class="b3_right_carousel_img"><img src="/static/source/b01.png" alt="" /></div>
+												<div class="b3_right_carousel_price">Цена <span>1900</span> руб.</div>
+											<!--	-->
+											<div class="b3_right_carousel_button_n"><a href="glasses?item_id=1008" class="btn"><span>Далее</span></a><a ui-sref = "IdGlasses({ glassesId: glasses[7].id })"> {{glasses[7].id}} </a></div> 
+												
+
+												<div class="b3_right_carousel_sub"></div>					
+											</div>
+													
+										
+										
+										
+										
+										
+										
+										
+										
+
+																					
+											
+																
+																											</div>
+											</div>
+
+																</div>
+					</div>
+					<div class="b3_right_text">* Цена указана за 2 бокала с гравировкой.          
+        </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+  
+  
+  
+
+ 
+
+      </div>
+
+
+  
+  </body>
+  
+ 
+  
+
+	
+
+	<!-- -->
+<script type="text/javascript" src="/static/js/main.js"></script>
+
+
+
+
+</html>
